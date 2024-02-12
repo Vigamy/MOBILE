@@ -48,4 +48,8 @@ public class MainActivity extends AppCompatActivity {
         Intent in = new Intent(MainActivity.this, AppDeSorteio.class);
         startActivity(in);
     }
+    public void tpConversor(View view) {
+        Intent in = new Intent(MainActivity.this, AppDeConversao.class);
+        startActivity(in);
+    }
 }
