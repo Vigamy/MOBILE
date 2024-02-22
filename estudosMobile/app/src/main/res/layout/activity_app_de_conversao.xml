@@ -28,13 +28,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/informeValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Informe o valor em Dolar" />
 
         <EditText
-            android:id="@+id/valorDolar"
+            android:id="@+id/editEntrada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,17 +48,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
+            android:onClick="converterAPI"
             android:text="Converter"
             app:cornerRadius="10dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/resultValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Valor em R$" />
 
         <TextView
-            android:id="@+id/valorReal"
+            android:id="@+id/editSaida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -72,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="500dp"
             android:backgroundTint="#6A00FE"
             android:onClick="inverter"
             android:text="Inverter"
@@ -82,9 +83,9 @@
             android:id="@+id/tpMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="270dp"
-            android:layout_marginTop="320dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="16dp"
             android:onClick="tpMain"
             android:text="Tela de início"

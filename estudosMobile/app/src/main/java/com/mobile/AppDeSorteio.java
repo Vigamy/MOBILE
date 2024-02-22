@@ -29,7 +29,6 @@ public class AppDeSorteio extends AppCompatActivity {
     }
 
     public void tpMain(View view) {
-        Intent in = new Intent(AppDeSorteio.this, MainActivity.class);
-        startActivity(in);
+        finish();
     }
 }

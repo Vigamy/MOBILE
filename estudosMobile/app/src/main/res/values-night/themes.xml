@@ -2,7 +2,13 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.EstudosMobile" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/black</item>
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:background">@color/night_purple</item>
+        <item name="colorPrimary">#0037FF</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Netflix.Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:background">#00000000</item>
+        <item name="android:statusBarColor">#C62600</item>
+        <item name="colorPrimary">#C62600</item>
     </style>
 </resources>
