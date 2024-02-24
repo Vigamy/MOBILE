@@ -10,10 +10,10 @@
         android:id="@+id/tpMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
         android:layout_marginTop="32dp"
         android:onClick="teleport"
         android:text="App Android Demo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -21,10 +21,10 @@
         android:id="@+id/tpSortear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
         android:layout_marginTop="32dp"
         android:onClick="tpSorteio"
         android:text="App de Sorteio"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tpMain" />
 
@@ -32,37 +32,56 @@
         android:id="@+id/tpConversor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
         android:layout_marginTop="32dp"
         android:onClick="tpConversor"
         android:text="Conversor Dolar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tpSortear" />
+
+    <Button
+        android:id="@+id/tpGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="tpGasolina"
+        android:text="Calcular Gasolina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpConversor" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="70dp"
         android:layout_height="77dp"
-        android:layout_marginStart="170dp"
         android:layout_marginTop="32dp"
         android:contentDescription="Botão com a logo da Netflix"
         android:onClick="tpNetflix"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tpConversor"
+        app:layout_constraintTop_toBottomOf="@+id/tpGasolina"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="252dp"
         android:layout_height="112dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="168dp"
         android:text="Bem Vindo(a) ao app de estudos do Will!"
         android:textAlignment="center"
         android:textSize="32dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
