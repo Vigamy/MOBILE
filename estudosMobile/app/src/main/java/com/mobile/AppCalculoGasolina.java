@@ -18,8 +18,8 @@ public class AppCalculoGasolina extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_calculo_gasolina);
-        editPrecoAlcool = findViewById(R.id.editPrecoAlcool);
-        editPrecoGasolina = findViewById(R.id.editPrecoGasolina);
+        editPrecoAlcool = findViewById(R.id.editPeso);
+        editPrecoGasolina = findViewById(R.id.editAltura);
         btnCalcular = findViewById(R.id.calcular);
         resultado = findViewById(R.id.resultado);
         btnCalcular.setOnClickListener(new View.OnClickListener() {
