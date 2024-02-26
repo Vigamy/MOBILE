@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#F7FAFF"
         android:onClick="teleport"
         android:text="App Android Demo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#F7FAFF"
         android:onClick="tpSorteio"
         android:text="App de Sorteio"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,10 +31,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tpMain" />
 
     <Button
-        android:id="@+id/tpConversor"
+        android:id="@+id/btnConversor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#F7FAFF"
         android:onClick="tpConversor"
         android:text="Conversor Dolar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,16 +43,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tpSortear" />
 
     <Button
-        android:id="@+id/tpGasolina"
+        android:id="@+id/btnGasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#F7FAFF"
         android:onClick="tpGasolina"
         android:text="Calcular Gasolina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tpConversor" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConversor" />
 
     <Button
         android:id="@+id/tpIMC"
@@ -61,7 +65,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tpGasolina" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGasolina" />
+
+    <Button
+        android:id="@+id/btnCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F7FAFF"
+        android:onClick="tpCalculadora"
+        android:text="Calculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGasolina" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -80,12 +97,13 @@
         android:id="@+id/textView4"
         android:layout_width="252dp"
         android:layout_height="112dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="40dp"
         android:text="Bem Vindo(a) ao app de estudos do Will!"
         android:textAlignment="center"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

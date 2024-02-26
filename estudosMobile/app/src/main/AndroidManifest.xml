@@ -15,6 +15,9 @@
         android:theme="@style/Theme.EstudosMobile"
         tools:targetApi="31">
         <activity
+            android:name=".AppJogoDaVelha"
+            android:exported="false" />
+        <activity
             android:name=".AppCalculadora"
             android:exported="false" />
         <activity

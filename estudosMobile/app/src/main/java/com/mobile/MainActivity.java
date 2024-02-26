@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         Intent in = new Intent(MainActivity.this, AppCalculoIMC.class);
         startActivity(in);
     }
+    public void tpCalculadora(View view) {
+        Intent in = new Intent(MainActivity.this, AppCalculadora.class);
+        startActivity(in);
+    }
     public void tpNetflix(View view){
         Intent in = new Intent(MainActivity.this, Netflix.class);
         startActivity(in);

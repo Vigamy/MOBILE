@@ -31,9 +31,9 @@ public class AppCalculoGasolina extends AppCompatActivity {
 
                 double calculo = (precoAlcool/precoGasolina);
                 if(calculo >= 0.7){
-                    resultado.setText("Use Gasolina!");
+                    resultado.setText("Use Gasolina.\nEstá" + calculo + "% melhor!");
                 }else{
-                    resultado.setText("Use Álcool!");
+                    resultado.setText("Use Álcool." + calculo + "% melhor!");
                 }
             }
         });
