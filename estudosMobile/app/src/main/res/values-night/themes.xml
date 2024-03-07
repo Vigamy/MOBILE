@@ -5,9 +5,14 @@
         <item name="android:background">@color/night_purple</item>
         <item name="colorPrimary">#0037FF</item>
     </style>
+
     <style name="Netflix.Theme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:background">#00000000</item>
         <item name="android:statusBarColor">#C62600</item>
         <item name="colorPrimary">#C62600</item>
+    </style>
+
+    <style name="AppFullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

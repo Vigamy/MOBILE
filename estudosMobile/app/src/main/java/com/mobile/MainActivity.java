@@ -2,6 +2,7 @@ package com.mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,32 +36,29 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void teleport(View view) {
-        Intent in = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(in);
+        mudarTela(MainActivity2.class);
     }
-
     public void tpSorteio(View view) {
-        Intent in = new Intent(MainActivity.this, AppDeSorteio.class);
-        startActivity(in);
+        mudarTela(AppDeSorteio.class);
     }
     public void tpConversor(View view) {
-        Intent in = new Intent(MainActivity.this, AppDeConversao.class);
-        startActivity(in);
+        mudarTela(AppDeConversao.class);
     }
     public void tpGasolina(View view) {
-        Intent in = new Intent(MainActivity.this, AppCalculoGasolina.class);
-        startActivity(in);
+        mudarTela(AppCalculoGasolina.class);
     }
     public void tpIMC(View view) {
-        Intent in = new Intent(MainActivity.this, AppCalculoIMC.class);
-        startActivity(in);
+        mudarTela(AppCalculoIMC.class);
     }
     public void tpCalculadora(View view) {
-        Intent in = new Intent(MainActivity.this, AppCalculadora.class);
-        startActivity(in);
+        mudarTela(AppCalculadora.class);
     }
     public void tpNetflix(View view){
-        Intent in = new Intent(MainActivity.this, Netflix.class);
+        mudarTela(Netflix.class);
+    }
+    public void mudarTela(Class activityMudar){
+        Intent in = new Intent(MainActivity.this, activityMudar);
         startActivity(in);
+        finish();
     }
 }
