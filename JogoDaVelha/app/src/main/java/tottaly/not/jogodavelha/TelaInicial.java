@@ -22,14 +22,14 @@ public class TelaInicial extends AppCompatActivity {
     }
 
     public void normal(View view) {
-        Intent in = new Intent(TelaInicial.this, MainActivity.class);
+        Intent in = new Intent(TelaInicial.this, Padrao.class);
         startActivity(in);
-        finish();
+//        finish();
     }
 
     public void bot(View view) {
-        Intent in = new Intent(TelaInicial.this, MainActivity.class);
+        Intent in = new Intent(TelaInicial.this, Bot.class);
         startActivity(in);
-        finish();
+//        finish();
     }
 }
