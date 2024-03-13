@@ -12,11 +12,21 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1, btn2;
-    TextView txt;
+    TextView txt, textInformation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        textInformation = findViewById(R.id.textInformation);
+
+        //RECEBENDO INFORMAÇÕES
+        Bundle dados = getIntent().getExtras();
+        if(dados != null){
+            String nome = dados.getString("nome");
+            double fone = dados.getDouble("fone");
+            String email = dados.getString("email");
+            textInformation.setText("Nome: " + nome + "\nTelefone: " + fone + "\nEmail: " + email);
+        }
 
         // Ativar o listener
 //        btn2.setOnClickListener(new View.OnClickListener() {

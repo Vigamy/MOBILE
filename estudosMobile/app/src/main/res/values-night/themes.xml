@@ -4,12 +4,19 @@
         <item name="android:statusBarColor">@color/black</item>
         <item name="android:background">@color/night_purple</item>
         <item name="colorPrimary">#0037FF</item>
+        <item name="colorAccent">#0BFFF6</item>
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
     </style>
 
     <style name="Netflix.Theme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:background">#00000000</item>
         <item name="android:statusBarColor">#C62600</item>
         <item name="colorPrimary">#C62600</item>
+    </style>
+
+    <!-- Custom style for buttons -->
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#ECECEC</item>
     </style>
 
     <style name="AppFullscreen" parent="Theme.AppCompat.NoActionBar">

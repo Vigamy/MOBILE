@@ -28,12 +28,12 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 abrirTela();
             }
-        }, 7000);
+        }, 1000);
 
     }
 
     private void abrirTela() {
-        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+        Intent intent = new Intent(SplashScreen.this, TestandoIntents.class);
         startActivity(intent);
         finish();
     }
