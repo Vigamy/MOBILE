@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle dados = getIntent().getExtras();
         if(dados != null){
             String nome = dados.getString("nome");
-            double fone = dados.getDouble("fone");
+            Long fone = dados.getLong("fone");
             String email = dados.getString("email");
             textInformation.setText("Nome: " + nome + "\nTelefone: " + fone + "\nEmail: " + email);
         }

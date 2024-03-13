@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.math.BigInteger;
+
 public class TestandoIntents extends AppCompatActivity {
     EditText nome, fone, email;
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class TestandoIntents extends AppCompatActivity {
         Bundle dados = new Bundle();
         dados.putString("nome", nome.getText().toString());
         if(!fone.getText().toString().isEmpty()) {
-            dados.putDouble("fone", Double.parseDouble(fone.getText().toString()));
+            dados.putLong("fone", Long.parseLong(fone.getText().toString()));
         }
         dados.putString("email", email.getText().toString());
 
