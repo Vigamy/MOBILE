@@ -1,0 +1,133 @@
+package com.example.praticaandroid;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.praticaandroid.Api.CotacaoService;
+import com.example.praticaandroid.Api.Dolar;
+import com.example.praticaandroid.Api.Peso;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btnMostrar;
+    TextView textViewDolar, textViewPeso;
+    boolean isClicked;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btnMostrar = findViewById(R.id.buttonMostrar);
+        textViewDolar = findViewById(R.id.textView_dolar);
+        textViewPeso = findViewById(R.id.textView_real);
+
+        btnMostrar.setOnClickListener(v -> {
+
+            if (!isClicked) {
+                isClicked = true;
+                btnMostrar.setText("Esconder cotação");
+
+                showCotacao();
+
+            } else {
+                isClicked = false;
+                btnMostrar.setText("Mostrar cotação");
+                textViewDolar.setText("");
+                textViewPeso.setText("");
+            }
+        });
+
+    }
+
+    private void showCotacao() {
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://economia.awesomeapi.com.br/json/last/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        CotacaoService cotacaoService = retrofit.create(CotacaoService.class);
+
+        Call<List<Dolar>> callDolar = cotacaoService.obterDolar();
+        callDolar.enqueue(new Callback<List<Dolar>>() {
+            @Override
+            public void onResponse(Call<List<Dolar>> call, Response<List<Dolar>> response) {
+                if (response.isSuccessful()) {
+                    List<Dolar> cotacao = response.body();
+                    Dolar dolar = cotacao.get(0);
+
+                    String dataFormatada = formatTimestamp(dolar.getTimestamp());
+                    textViewDolar.setText(String.format("DOLAR:\n1 Dólar = %s Reais\n Data:\n %s", dolar.getHigh(), dataFormatada));
+                } else {
+                    try {
+                        Log.d("ERROR", response.errorBody().string());
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Dolar>> call, Throwable throwable) {
+                Log.d("ERROR", throwable.getMessage());
+            }
+        });
+
+        Call<List<Peso>> callPeso = cotacaoService.obterPeso();
+        callPeso.enqueue(new Callback<List<Peso>>() {
+            @Override
+            public void onResponse(Call<List<Peso>> call, Response<List<Peso>> response) {
+                if (response.isSuccessful()) {
+                    List<Peso> pesoList = response.body();
+                    Peso peso = pesoList.get(0);
+
+                    String dataFormatada = formatTimestamp(peso.getTimestamp());
+                    textViewPeso.setText(String.format("PESOS:\n1 Real = %s Pesos\n Data:\n %s", peso.getHigh(), dataFormatada));
+                } else {
+                    try {
+                        Log.d("ERROR", response.errorBody().string());
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Peso>> call, Throwable throwable) {
+                Log.d("ERROR", throwable.getMessage());
+
+            }
+        });
+    }
+
+    private String formatTimestamp(String timestamp) {
+        try {
+            long epochTime = Long.parseLong(timestamp) * 1000;
+            Date date = new Date(epochTime);
+
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());
+            return sdf.format(date);
+
+        } catch (NumberFormatException e) {
+            Log.d("ERROR", "Erro ao converter o timestamp: " + e.getMessage());
+            return "Data inválida";
+        }
+    }
+}

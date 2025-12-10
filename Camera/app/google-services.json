@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813691637858",
+    "project_id": "camera-c90ab",
+    "storage_bucket": "camera-c90ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813691637858:android:e58a78839b786dd8ac013b",
+        "android_client_info": {
+          "package_name": "com.aula.camera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClD0cpwVaT1RCLYNTlfNV8MYr4bmizqjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

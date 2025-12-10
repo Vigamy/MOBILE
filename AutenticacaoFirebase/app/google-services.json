@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "713987565983",
+    "project_id": "autenticacao-5b739",
+    "storage_bucket": "autenticacao-5b739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713987565983:android:618392d1d73624d342f5aa",
+        "android_client_info": {
+          "package_name": "com.aula.autenticacaofirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWxOvAPBCC0YL-afa8QgAMACWI3n4Y53Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

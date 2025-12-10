@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387760213660",
+    "project_id": "salaf-623d9",
+    "storage_bucket": "salaf-623d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387760213660:android:96bdfc7e2a247dac586759",
+        "android_client_info": {
+          "package_name": "com.buffet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT8REUAIs0ubgPb2OfVXpWtXna1XJ910Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="30dp"
+    android:layout_margin="25dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/numCracha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Número do Crachá"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:id="@+id/atendimentoInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numCracha"
+            android:layout_alignParentStart="true"
+            android:text="Inicio: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/atendimentoFim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/atendimentoInicio"
+            android:layout_alignParentStart="true"
+
+            android:text="Término: "
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

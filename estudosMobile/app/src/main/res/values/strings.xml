@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">estudosMobile</string>
+    <string name="bt_salvar">Salvar Dados</string>
+    <string name="take_photo">Photo</string>
+    <string name="start_capture">Firebase</string>
+</resources>

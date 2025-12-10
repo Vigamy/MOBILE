@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicial">
+
+    <Button
+        android:id="@+id/jogarAlone"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:onClick="normal"
+        android:text="Amigo"
+        android:textSize="20dp"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <Button
+        android:id="@+id/jogarBot"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="bot"
+        android:text="Bot"
+        android:textSize="20dp"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jogarAlone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/jogarAlone"
+        app:layout_constraintTop_toTopOf="@+id/jogarAlone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/jogarIA"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:onClick="IA"
+        android:text="IA"
+        android:textSize="20dp"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jogarAlone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/jogarAlone"
+        app:layout_constraintTop_toTopOf="@+id/jogarAlone"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="160dp"
+        android:text="JOGO DA VELHA"
+        android:textAlignment="center"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gifTicTacToe"
+        android:layout_width="164dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/jogarAlone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

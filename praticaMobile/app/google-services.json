@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966056052345",
+    "project_id": "praticamobile-7fbc8",
+    "storage_bucket": "praticamobile-7fbc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966056052345:android:858fb86ee4c10d646576a8",
+        "android_client_info": {
+          "package_name": "com.aula.praticamobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR2aKFN2_VkALoisaYg00D_7cfAd8QnkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

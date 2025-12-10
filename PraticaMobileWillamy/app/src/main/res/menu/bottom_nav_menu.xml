@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_diversao"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_diversao" />
+
+    <item
+        android:id="@+id/navigation_surpresa"
+        android:icon="@drawable/feliz"
+        android:title="@string/title_surpresa" />
+
+</menu>

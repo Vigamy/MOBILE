@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61BC8B"
+    android:contentDescription="coroa"
+    tools:context=".CaraOuCoroa">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/moeda"
+        app:layout_constraintStart_toStartOf="@+id/moeda"
+        app:layout_constraintTop_toBottomOf="@+id/moeda" />
+
+    <ImageView
+        android:id="@+id/moeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="jogarMoeda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moeda_coroa" />
+
+    <ImageView
+        android:id="@+id/btnVoltar"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

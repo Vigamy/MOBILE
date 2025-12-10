@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/novoLembreteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Novo lembrete"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lembreteTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Título:"
+        android:textSize="24sp"
+        android:layout_below="@id/novoLembreteTextView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/lembreteTituloEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Lavar a louça"
+        android:textSize="18sp"
+        android:layout_below="@id/lembreteTitulo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/lembreteDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Descrição:"
+        android:textSize="24sp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/lembreteTituloEditText"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/lembreteDescricaoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Lavar louça ouvindo música..."
+        android:textSize="18sp"
+        android:layout_below="@id/lembreteDescricao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnCancelarLembrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:textStyle="bold"
+        android:backgroundTint="#DF3737"
+        android:layout_below="@id/lembreteDescricaoEditText"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnConfirmarLembrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR"
+        android:textStyle="bold"
+        android:backgroundTint="#4EDA4E"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/lembreteDescricaoEditText"
+        />
+
+
+</RelativeLayout>

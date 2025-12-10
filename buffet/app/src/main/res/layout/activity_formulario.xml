@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icon_person"
+        android:backgroundTint="#2929FF"
+        android:backgroundTintMode="add" />
+
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_pic"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nome_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nome_input"
+            android:id="@+id/responsavel_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Responsavel"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/responsavel_input"
+            android:id="@+id/telefone_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefone"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/calendario"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/telefone_input"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+        <TextView
+            android:id="@+id/text_calendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telefone_input"
+            android:layout_toRightOf="@id/calendario"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Data Nascimento"
+            android:textSize="20sp"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/calendario">
+
+            <TextView
+                android:id="@+id/textview_restricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Restrição:"
+                android:textSize="30sp"
+                />
+            <CheckBox
+                android:id="@+id/checkbox_restricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+
+                android:layout_toRightOf="@id/textview_restricao"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="SALVAR"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

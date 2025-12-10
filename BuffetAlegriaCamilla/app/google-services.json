@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615847505527",
+    "project_id": "buffetalegria-fc440",
+    "storage_bucket": "buffetalegria-fc440.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615847505527:android:c3bb014ed82431dcc0e072",
+        "android_client_info": {
+          "package_name": "com.aula.buffetalegria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPX6UB5nNi3REWUvLF3ndLj9EoqbaAG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="253dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="68dp"
+            android:text="Bem Vindo(a) ao app de estudos do Will!"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Suas Informações:"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textInformation"
+            android:layout_width="2dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <RelativeLayout
+            android:id="@+id/btnLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="880dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInformation">
+
+            <Button
+                android:id="@+id/tpMain"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="teleport"
+                android:text="App Android Demo"
+                android:layout_alignParentTop="true"
+                />
+
+            <Button
+                android:id="@+id/tpSortear"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpSorteio"
+                android:text="App de Sorteio"
+                android:layout_below="@id/tpMain"
+                />
+
+            <Button
+                android:id="@+id/btnConversor"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpConversor"
+                android:text="Conversor Dolar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tpSortear"
+                android:layout_below="@id/tpSortear" />
+
+            <Button
+                android:id="@+id/btnGasolina"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpGasolina"
+                android:text="Calcular Gasolina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnConversor"
+                android:layout_below="@id/btnConversor" />
+
+            <Button
+                android:id="@+id/tpIMC"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpIMC"
+                android:text="Calcular IMC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGasolina"
+                android:layout_below="@id/btnGasolina" />
+
+            <Button
+                android:id="@+id/btnCalculadora"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpCalculadora"
+                android:text="Calculadora"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tpIMC"
+                android:layout_below="@id/tpIMC" />
+
+            <Button
+                android:id="@+id/btnWebView"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpYoutube"
+                android:text="Youtube"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalculadora"
+                android:layout_below="@id/btnCalculadora" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpInfo"
+                android:text="Informações"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnWebView"
+                android:layout_below="@id/btnWebView" />
+
+            <Button
+                android:id="@+id/btnListView"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpListinha"
+                android:text="Listview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnInfo"
+                android:layout_below="@id/btnInfo" />
+
+            <Button
+                android:id="@+id/btnRecycleView"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpRecycleView"
+                android:text="RECYCLEVIEW"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnListView"
+                android:layout_below="@id/btnListView"/>
+
+            <Button
+                android:id="@+id/btnBuffet"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="#3333FE"
+                android:onClick="tpBuffet"
+                android:text="Buffet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRecycleView"
+                android:layout_below="@id/btnRecycleView"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="59dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Botão com a logo da Netflix"
+            android:onClick="tpNetflix"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLayoutId"
+            app:layout_constraintVertical_bias="0.449"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/gifGPT"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="ChatGPT"
+            android:onClick="tpIA"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/cameraImg"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="Camera"
+            android:onClick="tpCamera"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gifGPT"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/ActivityResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn"
+            android:backgroundTint="#3333FE"
+            android:onClick="tpActivityResult"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/imageButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnBotões"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/btn"
+            android:backgroundTint="#3333FE"
+            android:onClick="tpButtons"
+            android:text="Layout de botões"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ActivityResult" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
